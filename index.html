@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-gradient-to-br from-[#050E28] via-[#1A0C20] to-[#05051A]">
+    <nav class="relative w-full p-[26px] pl-4 pr-4">
+      <div class="flex justify-between items-center">
+        <!-- logo  -->
+        <img
+          src="https://www.penprogrammer.com/logo/logo-white.png"
+          alt="Pen programmer logo"
+          class="h-[40px]"
+        />
+
+        <!-- Desktop Navigation -->
+        <ul class="hidden md:flex gap-10 text-lg text-white font-medium">
+          <li><a href="#home" class="hover:text-blue-400">Home</a></li>
+          <li><a href="#projects" class="hover:text-blue-400">Projects</a></li>
+          <li><a href="#skills" class="hover:text-blue-400">Skills</a></li>
+          <li><a href="#about" class="hover:text-blue-400">About Me</a></li>
+          <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
+          <li>
+            <a href="#contact" class="hover:text-blue-400 pl-64"
+              >Student Portal</a
+            >
+          </li>
+        </ul>
+
+        <button id="btn" class="md:hidden text-3xl">☰</button>
+      </div>
+
+      <!-- Mobile Navigation -->
+      <div
+        id="mobile"
+        class="hidden text-[17px] left-0 top-23 absolute md:hidden text-white flex w-full flex-col items-left space-y-5 pl-5 pt-3 pb-5"
+      >
+        <a href="#home" class="hover:text-blue-400 transition">Home</a>
+        <a href="#projects" class="hover:text-blue-400 transition">About</a>
+        <a href="#skills" class="hover:text-blue-400 transition">Courses</a>
+        <a href="#about" class="hover:text-blue-400 transition">Students</a>
+        <a href="#contact" class="hover:text-blue-400 transition">Contact Us</a>
+        <button class="w-full border-2 border-[#1aa8ef] rounded-full p-2">
+          Student Portal
+        </button>
+      </div>
+    </nav>
+
+    <!-- hero section -->
+
+    <div class="flex flex-col-reverse w-full bg-gradient-to-br pl-4 pb-5 pr-4">
+      <div class="space-y-3">
+        <h1 class="text-white text-xl font-bold">Welcome to</h1>
+        <h2 class="text-[#ABD8FB] text-4xl font-bold">Pen Programmer</h2>
+        <p class="text-white">
+          At Pen Programmer we are providing technical courses to train people
+          who are interested in this field, our mission is to empower people
+          with the essential skills and knowledge to succeed in the
+          fast-changing digital world. Our website is a top online hub that
+          provides a wide variety of technical courses suitable for both
+          beginners and experienced experts.
+        </p>
+        <button
+          class="w-[310px] border-2 border-[#1aa8ef] mt-4 text-white rounded-full p-1"
+        >
+          Read More About Pen Programmer
+        </button>
+      </div>
+
+      <img
+        src="https://www.penprogrammer.com/_next/image?url=%2Felements%2Fdeveloper-1.png&w=1920&q=75"
+        class="h-[26rem] w-auto"
+      />
+    </div>
+
+    <!-- projects -->
+    <div class="pl-4 pr-4 h-[500px] pt-20">
+      <h1 class="text-4xl text-white text-center">Gook GOok projects</h1>
+    </div>
+
+    <!-- courses -->
+
+    <h1 class="text-[#4ADE80] text-2xl font-bold text-center pb-6">
+      FREE <span class="text-white">Courses | Master the Core</span>
+    </h1>
+
+    <!-- grid -->
+    <div class="grid grid-cols-1">
+      <div
+        class="ml-4 mb-12 mr-4 bg-gradient-to-br from-[#19192C] via-[#1E1A2E] to-[#2A1E31] rounded-2xl"
+      >
+        <div class="p-4 rounded-2xl">
+          <img
+            src="https://www.penprogrammer.com/_next/image?url=%2Fcourses%2Fmaster-the-core-html.jpg&w=640&q=75"
+            alt=""
+            class="rounded-2xl"
+          />
+          <h1 class="text-2xl font-bold text-white mt-3">
+            Master The Core HTML 5
+          </h1>
+          <p class="text-1xl text-white">
+            In this beginner-friendly HTML5 course, we'll break down the
+            essentials of HTML5, step by step, so you can build a strong
+            foundation for creating stunning websites and web applications. With
+            hands-on examples and easy-to-follow explanations, you'll be well on
+            your way to becoming a proficient web developer.
+          </p>
+          <button
+            class="pl-4 pr-4 border-2 border-[#1aa8ef] mt-4 text-white rounded-full p-1"
+          >
+            Explore the Course
+          </button>
+        </div>
+      </div>
+
+      <!-- new grid -->
+
+      <div
+        class="ml-4 mb-12 mr-4 bg-gradient-to-br from-[#19192C] via-[#1E1A2E] to-[#2A1E31] rounded-2xl"
+      >
+        <div class="p-4 rounded-2xl">
+          <img
+            src="https://www.penprogrammer.com/_next/image?url=%2Fcourses%2Fmaster-the-core-css.jpg&w=640&q=75"
+            alt=""
+            class="rounded-2xl"
+          />
+          <h1 class="text-2xl font-bold text-white mt-3">
+            Master the Core CSS 3
+          </h1>
+          <p class="text-1xl text-white">
+            We'll guide you through the fundamental aspects of Cascading Style
+            Sheets (CSS) to empower you in crafting visually appealing and
+            responsive websites. Taking a step-by-step approach, we'll demystify
+            CSS3, providing hands-on examples and clear explanations to help you
+            grasp the core concepts.
+          </p>
+          <button
+            class="pl-4 pr-4 border-2 border-[#1aa8ef] mt-4 text-white rounded-full p-1"
+          >
+            Explore the Course
+          </button>
+        </div>
+      </div>
+      <!-- new grid -->
+
+      <div
+        class="ml-4 mb-12 mr-4 bg-gradient-to-br from-[#19192C] via-[#1E1A2E] to-[#2A1E31] rounded-2xl"
+      >
+        <div class="p-4 rounded-2xl">
+          <img
+            src="https://www.penprogrammer.com/_next/image?url=%2Fcourses%2Fcoming-soon.png&w=640&q=75"
+            alt=""
+            class="rounded-2xl"
+          />
+          <h1 class="text-2xl font-bold text-white mt-3">
+            Master the Core JavaScript
+          </h1>
+          <p class="text-1xl text-white">
+            Through hands-on examples and easy-to-follow explanations, you'll
+            dive into the core concepts of JavaScript programming. From
+            understanding variables, data types, and control structures to
+            exploring functions, events, and the Document Object Model (DOM),
+            you'll acquire the skills necessary to breathe life into your web
+            projects.
+          </p>
+          <button
+            class="pl-4 pr-4 border-2 border-[#1aa8ef] mt-4 text-white rounded-full p-1"
+          >
+            Coming Soon
+          </button>
+        </div>
+      </div>
+      <!-- grid end -->
+    </div>
+  </body>
+</html>
