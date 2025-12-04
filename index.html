@@ -4,6 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        font-family: "Montserrat", sans-serif;
+      }
+    </style> -->
   </head>
   <body class="bg-gradient-to-br from-[#050E28] via-[#1A0C20] to-[#05051A]">
     <nav class="relative w-full p-[26px] pl-4 pr-4">
@@ -12,11 +33,11 @@
         <img
           src="https://www.penprogrammer.com/logo/logo-white.png"
           alt="Pen programmer logo"
-          class="h-[40px]"
+          class="h-10 md:px-4 md:h-11"
         />
 
         <!-- Desktop Navigation -->
-        <ul class="hidden md:flex gap-10 text-lg text-white font-medium">
+        <ul class="hidden gap-10 text-lg text-white font-medium">
           <li><a href="#home" class="hover:text-blue-400">Home</a></li>
           <li><a href="#projects" class="hover:text-blue-400">Projects</a></li>
           <li><a href="#skills" class="hover:text-blue-400">Skills</a></li>
@@ -29,13 +50,15 @@
           </li>
         </ul>
 
-        <button id="btn" class="md:hidden text-3xl">☰</button>
+        <button id="btn" class="text-3xl md:text-2xl md:px-8 text-white">
+          ☰
+        </button>
       </div>
 
       <!-- Mobile Navigation -->
       <div
         id="mobile"
-        class="hidden text-[17px] left-0 md:hidden text-white flex w-full flex-col items-left space-y-5 pt-16 pb-5"
+        class="hidden text-[17px] left-0 text-white flex w-full flex-col items-left space-y-5 pt-16 pb-5"
       >
         <a href="#home" class="hover:text-blue-400 transition">Home</a>
         <a href="#projects" class="hover:text-blue-400 transition">About</a>
@@ -50,11 +73,13 @@
 
     <!-- hero section -->
 
-    <div class="flex flex-col-reverse w-full bg-gradient-to-br pl-4 pb-5 pr-4">
-      <div class="space-y-3">
-        <h1 class="text-white text-xl font-bold">Welcome to</h1>
-        <h2 class="text-[#ABD8FB] text-4xl font-bold">Pen Programmer</h2>
-        <p class="text-white">
+    <div class="flex flex-col-reverse w-full px-4 pb-5">
+      <div class="space-y-3 md:px-4">
+        <h1 class="text-white text-xl font-bold md:text-[38px] md:font-bold">
+          Welcome to
+        </h1>
+        <h2 class="text-[#ABD8FB] text-4xl font-bold md:">Pen Programmer</h2>
+        <p class="text-white md:">
           At Pen Programmer we are providing technical courses to train people
           who are interested in this field, our mission is to empower people
           with the essential skills and knowledge to succeed in the
@@ -63,7 +88,7 @@
           beginners and experienced experts.
         </p>
         <button
-          class="w-[280px] border-2 border-[#1aa8ef] mt-2 text-white rounded-full p-2"
+          class="px-6 py-2 text-sm border-2 border-[#1aa8ef] mt-2 text-white rounded-full"
         >
           Read More About Pen Programmer
         </button>
@@ -71,7 +96,7 @@
 
       <img
         src="https://www.penprogrammer.com/_next/image?url=%2Felements%2Fdeveloper-1.png&w=1920&q=75"
-        class="h-full w-full"
+        class="h-full w-full md:w-[34rem] md:mx-auto"
       />
     </div>
 
@@ -82,119 +107,123 @@
 
     <!-- courses -->
 
-    <h1 class="text-[#4ADE80] pl-2 pr-2 text-2xl font-bold text-center pb-6">
+    <h1
+      class="text-[#4ADE80] pl-2 pr-2 text-2xl font-bold text-center pb-6 md:font-bold md:text-[28px]"
+    >
       FREE <span class="text-white">Courses | Master the Core</span>
     </h1>
 
     <!-- grid -->
-    <div class="grid grid-cols-1">
-      <div
-        class="ml-4 mb-12 mr-4 bg-gradient-to-br from-[#19192C] via-[#1E1A2E] to-[#2A1E31] rounded-2xl"
-      >
-        <div class="p-4 rounded-2xl">
-          <img
-            src="https://www.penprogrammer.com/_next/image?url=%2Fcourses%2Fmaster-the-core-html.jpg&w=640&q=75"
-            alt=""
-            class="rounded-2xl"
-          />
-          <h1 class="text-2xl font-bold text-white mt-3">
-            Master The Core HTML 5
-          </h1>
-          <p class="text-1xl text-white">
-            In this beginner-friendly HTML5 course, we'll break down the
-            essentials of HTML5, step by step, so you can build a strong
-            foundation for creating stunning websites and web applications. With
-            hands-on examples and easy-to-follow explanations, you'll be well on
-            your way to becoming a proficient web developer.
-          </p>
-          <button
-            class="pl-4 pr-4 border-2 border-[#1aa8ef] mt-4 text-white rounded-full p-1"
-          >
-            Explore the Course
-          </button>
-        </div>
+    <!-- Flex container -->
+    <div
+      class="flex flex-col md:flex-row items-center p-4 rounded-2xl gap-6 ml-4 mb-12 mr-4 bg-gradient-to-br from-[#19192C] via-[#1E1A2E] to-[#2A1E31] overflow-hidden"
+    >
+      <!-- Left:  -->
+
+      <img
+        src="https://www.penprogrammer.com/_next/image?url=%2Fcourses%2Fmaster-the-core-html.jpg&w=640&q=75"
+        alt="Master The Core HTML 5"
+        class="rounded-2xl md:w-[50%] w-full object-cover"
+      />
+
+      <!-- Right -->
+      <div class="w-full md:w-1/2">
+        <h1 class="text-2xl font-bold text-white mb-3">
+          Master The Core HTML 5
+        </h1>
+        <p class="text-base text-white leading-relaxed">
+          In this beginner-friendly HTML5 course, we'll break down the
+          essentials of HTML5, step by step, so you can build a strong
+          foundation for creating stunning websites and web applications. With
+          hands-on examples and easy-to-follow explanations, you'll be well on
+          your way to becoming a proficient web developer.
+        </p>
+        <button
+          class="border-2 border-[#1aa8ef] mt-4 text-white rounded-full px-5 py-2 hover:bg-[#1aa8ef] hover:text-white transition-all duration-300"
+        >
+          Explore the Course
+        </button>
       </div>
+    </div>
 
-      <!-- new grid -->
+    <!-- new grid -->
 
-      <div
-        class="ml-4 mb-12 mr-4 bg-gradient-to-br from-[#19192C] via-[#1E1A2E] to-[#2A1E31] rounded-2xl"
-      >
-        <div class="p-4 rounded-2xl">
-          <img
-            src="https://www.penprogrammer.com/_next/image?url=%2Fcourses%2Fmaster-the-core-css.jpg&w=640&q=75"
-            alt=""
-            class="rounded-2xl"
-          />
-          <h1 class="text-2xl font-bold text-white mt-3">
-            Master the Core CSS 3
-          </h1>
-          <p class="text-1xl text-white">
-            We'll guide you through the fundamental aspects of Cascading Style
-            Sheets (CSS) to empower you in crafting visually appealing and
-            responsive websites. Taking a step-by-step approach, we'll demystify
-            CSS3, providing hands-on examples and clear explanations to help you
-            grasp the core concepts.
-          </p>
-          <button
-            class="pl-4 pr-4 border-2 border-[#1aa8ef] mt-4 text-white rounded-full p-1"
-          >
-            Explore the Course
-          </button>
-        </div>
+    <div
+      class="ml-4 mb-12 mr-4 bg-gradient-to-br from-[#19192C] via-[#1E1A2E] to-[#2A1E31] rounded-2xl"
+    >
+      <div class="p-4 rounded-2xl">
+        <img
+          src="https://www.penprogrammer.com/_next/image?url=%2Fcourses%2Fmaster-the-core-css.jpg&w=640&q=75"
+          alt=""
+          class="rounded-2xl"
+        />
+        <h1 class="text-2xl font-bold text-white mt-3">
+          Master the Core CSS 3
+        </h1>
+        <p class="text-1xl text-white">
+          We'll guide you through the fundamental aspects of Cascading Style
+          Sheets (CSS) to empower you in crafting visually appealing and
+          responsive websites. Taking a step-by-step approach, we'll demystify
+          CSS3, providing hands-on examples and clear explanations to help you
+          grasp the core concepts.
+        </p>
+        <button
+          class="pl-4 pr-4 border-2 border-[#1aa8ef] mt-4 text-white rounded-full p-1"
+        >
+          Explore the Course
+        </button>
       </div>
-      <!-- new grid -->
+    </div>
+    <!-- new grid -->
 
-      <div
-        class="ml-4 mb-12 mr-4 bg-gradient-to-br from-[#19192C] via-[#1E1A2E] to-[#2A1E31] rounded-2xl"
-      >
-        <div class="p-4 rounded-2xl">
-          <img
-            src="https://www.penprogrammer.com/_next/image?url=%2Fcourses%2Fcoming-soon.png&w=640&q=75"
-            alt=""
-            class="rounded-2xl"
-          />
-          <h1 class="text-2xl font-bold text-white mt-3">
-            Master the Core JavaScript
-          </h1>
-          <p class="text-1xl text-white">
-            Through hands-on examples and easy-to-follow explanations, you'll
-            dive into the core concepts of JavaScript programming. From
-            understanding variables, data types, and control structures to
-            exploring functions, events, and the Document Object Model (DOM),
-            you'll acquire the skills necessary to breathe life into your web
-            projects.
-          </p>
-          <button
-            class="pl-4 pr-4 border-2 border-[#1aa8ef] mt-4 text-white rounded-full p-1"
-          >
-            Coming Soon
-          </button>
-        </div>
+    <div
+      class="ml-4 mb-12 mr-4 bg-gradient-to-br from-[#19192C] via-[#1E1A2E] to-[#2A1E31] rounded-2xl"
+    >
+      <div class="p-4 rounded-2xl">
+        <img
+          src="https://www.penprogrammer.com/_next/image?url=%2Fcourses%2Fcoming-soon.png&w=640&q=75"
+          alt=""
+          class="rounded-2xl"
+        />
+        <h1 class="text-2xl font-bold text-white mt-3">
+          Master the Core JavaScript
+        </h1>
+        <p class="text-1xl text-white">
+          Through hands-on examples and easy-to-follow explanations, you'll dive
+          into the core concepts of JavaScript programming. From understanding
+          variables, data types, and control structures to exploring functions,
+          events, and the Document Object Model (DOM), you'll acquire the skills
+          necessary to breathe life into your web projects.
+        </p>
+        <button
+          class="pl-4 pr-4 border-2 border-[#1aa8ef] mt-4 text-white rounded-full p-1"
+        >
+          Coming Soon
+        </button>
       </div>
-      <!-- grid end -->
+    </div>
+    <!-- grid end -->
 
-      <!-- new grid -->
+    <!-- new grid -->
 
-      <div
-        class="ml-4 mb-12 mr-4 bg-gradient-to-br from-[#19192C] via-[#1E1A2E] to-[#2A1E31] rounded-2xl item text-center"
-      >
-        <div class="p-4 rounded-2xl">
-          <img
-            src="https://www.penprogrammer.com/_next/image?url=%2Ftechnologies%2Fyoutube.png&w=640&q=75"
-            alt=""
-            class="rounded-2xl h-44 mx-auto"
-          />
-          <h1 class="text-2xl font-bold text-white mt-3">
-            We're at <span class="text-red-400">YouTube</span>
-          </h1>
-          <p class="text-[42px] font-semibold text-blue-200">SUBSCRIBE</p>
-          <button
-            class="text-lg truncate py-4 px-20 border-2 border-[#1aa8ef] mt-4 text-white rounded-full p-1"
-          >
-            Subscribe Now
-          </button>
-        </div>
+    <div
+      class="ml-4 mb-12 mr-4 bg-gradient-to-br from-[#19192C] via-[#1E1A2E] to-[#2A1E31] rounded-2xl item text-center"
+    >
+      <div class="p-4 rounded-2xl">
+        <img
+          src="https://www.penprogrammer.com/_next/image?url=%2Ftechnologies%2Fyoutube.png&w=640&q=75"
+          alt=""
+          class="rounded-2xl h-44 mx-auto"
+        />
+        <h1 class="text-2xl font-bold text-white mt-3">
+          We're at <span class="text-red-400">YouTube</span>
+        </h1>
+        <p class="text-[42px] font-semibold text-blue-200">SUBSCRIBE</p>
+        <button
+          class="text-lg truncate py-4 px-20 border-2 border-[#1aa8ef] mt-4 text-white rounded-full p-1"
+        >
+          Subscribe Now
+        </button>
       </div>
     </div>
 
@@ -409,14 +438,14 @@
       </div>
 
       <div
-        class="h-56 w-[160px] ml-4 px-3 py-3 bg-gradient-to-br from-[#19192C] via-[#1E1A2E] to-[#2A1E31] rounded-2xl"
+        class="h-56 w-40 ml-4 px-3 py-3 bg-gradient-to-br from-[#19192C] via-[#1E1A2E] to-[#2A1E31] rounded-2xl"
       >
         <img
           src="https://www.penprogrammer.com/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fimdad-library.appspot.com%2Fo%2Fstudents%252F1695967374737%3Falt%3Dmedia%26token%3Dfd50b6be-742f-41d1-bdbb-854b27d460ce&w=1920&q=75"
           alt=""
           class="rounded-xl"
         />
-        <h1 class="text-nowrap text-sm font-bold py-1">Abu Bakkar Siddique</h1>
+        <h1 class="text-lg font-bold py-1 truncate">Abu Bakkar Siddique</h1>
         <p>Web Development</p>
       </div>
 
@@ -428,7 +457,7 @@
           alt=""
           class="rounded-xl"
         />
-        <h1 class="text-nowrap text-sm font-bold py-1">Mustafizur Rahman</h1>
+        <h1 class="truncate text-lg font-bold py-1">Mustafizur Rahman</h1>
         <p>Web Development</p>
       </div>
     </div>
@@ -456,7 +485,7 @@
           alt=""
           class="rounded-xl"
         />
-        <h1 class="text-sm text-nowrap font-bold py-1">Rashid Islam Mirdha</h1>
+        <h1 class="text-lg truncate font-bold py-1">Rashid Islam Mirdha</h1>
         <p>Web Development</p>
       </div>
 
@@ -468,7 +497,7 @@
           alt=""
           class="rounded-xl"
         />
-        <h1 class="text-lg font-bold py-1">Mahabul Hoque</h1>
+        <h1 class="text-lg truncate font-bold py-1">Mahabul Hoque</h1>
         <p>Web Development</p>
       </div>
 
@@ -480,7 +509,7 @@
           alt=""
           class="rounded-xl"
         />
-        <h1 class="text-[22x] font-bold py-1">Karimullah Islam</h1>
+        <h1 class="text-lg truncate font-bold py-1">Karimullah Islam</h1>
         <p>Web Development</p>
       </div>
 
@@ -492,7 +521,7 @@
           alt=""
           class="rounded-xl"
         />
-        <h1 class="text-lg font-bold py-1">Fakaruddin Ali</h1>
+        <h1 class="text-lg truncate font-bold py-1">Fakaruddin Ali</h1>
         <p>Web Development</p>
       </div>
     </div>
@@ -683,7 +712,7 @@
     <!-- Question 1 -->
 
     <div
-      class="que bg-gradient-to-br from-[#533163] to-[#19192C] text-white rounded-2xl p-4 mx-4 cursor-pointer transition-all duration-300 my-8"
+      class="que bg-gradient-to-br from-[#2A1E31] to-[#19192C] text-white rounded-2xl p-4 mx-4 cursor-pointer transition-all duration-300 my-8"
     >
       <div class="flex justify-between items-center">
         <h3 class="text-lg font-semibold text-white">
@@ -702,7 +731,7 @@
     <!-- Question 2 -->
 
     <div
-      class="que bg-gradient-to-br from-[#533163] to-[#19192C] text-white rounded-2xl p-4 mx-4 cursor-pointer transition-all duration-300 my-8"
+      class="que bg-gradient-to-br from-[#2A1E31] to-[#19192C] text-white rounded-2xl p-4 mx-4 cursor-pointer transition-all duration-300 my-8"
     >
       <div class="flex justify-between items-center">
         <h3 class="text-lg font-semibold text-white">
@@ -721,21 +750,278 @@
       </p>
     </div>
 
-    <script>
-      const que = document.querySelector(".que");
-      const btn = document.getElementById("btn");
-      const mobile = document.getElementById("mobile");
+    <!-- questions 3 -->
 
-      //  Question Toggle
-      que.addEventListener("click", () => {
-        que.querySelector(".que-answer").classList.toggle("hidden");
-        que.querySelector(".arrow").classList.toggle("rotate-180");
-      });
+    <div
+      class="que bg-gradient-to-br from-[#2A1E31] to-[#19192C] text-white rounded-2xl p-4 mx-4 cursor-pointer transition-all duration-300 my-8"
+    >
+      <div class="flex justify-between items-center">
+        <h3 class="text-lg font-semibold text-white">
+          Are the courses self-paced or scheduled?
+        </h3>
+        <span class="arrow text-xl transform transition-transform duration-300"
+          >▼</span
+        >
+      </div>
+      <p class="que-answer text-gray-300 mt-3 hidden">
+        All our courses are self-paced, allowing you to learn at your
+        convenience. You can access the course materials anytime, anywhere, and
+        progress through the content at a pace that suits you best. There are no
+        fixed schedules, so you can balance learning with other commitments.
+      </p>
+    </div>
+
+    <!-- questions 4 -->
+
+    <div
+      class="que bg-gradient-to-br from-[#2A1E31] to-[#19192C] text-white rounded-2xl p-4 mx-4 cursor-pointer transition-all duration-300 my-8"
+    >
+      <div class="flex justify-between items-center">
+        <h3 class="text-lg font-semibold text-white">
+          What qualifications do I need to take a course at Pen Programmer?
+        </h3>
+        <span class="arrow text-xl transform transition-transform duration-300"
+          >▼</span
+        >
+      </div>
+      <p class="que-answer text-gray-300 mt-3 hidden">
+        No specific qualifications are required to enroll in our courses.
+        Whether you are a student, a working professional, or someone looking to
+        explore new skills, our courses are designed to accommodate learners of
+        all backgrounds and skill levels.
+      </p>
+    </div>
+
+    <!-- Question 5 -->
+
+    <div
+      class="que bg-gradient-to-br from-[#2A1E31] to-[#19192C] text-white rounded-2xl p-4 mx-4 cursor-pointer transition-all duration-300 my-8"
+    >
+      <div class="flex justify-between items-center">
+        <h3 class="text-lg font-semibold text-white">
+          What sets Pen Programmer courses apart from other online platforms?
+        </h3>
+        <span class="arrow text-xl transform transition-transform duration-300"
+          >▼</span
+        >
+      </div>
+      <p class="que-answer text-gray-300 mt-3 hidden border-t-2">
+        Pen Programmer stands out for its commitment to excellence in content
+        and instruction. Our courses are taught by industry experts with
+        real-world experience, ensuring you receive practical insights and
+        industry-relevant knowledge. Additionally, our interactive learning
+        approach, hands-on projects, and community support enhance the learning
+        experience.
+      </p>
+    </div>
+
+    <!-- Question 6 -->
+
+    <div
+      class="que bg-gradient-to-br from-[#2A1E31] to-[#19192C] text-white rounded-2xl p-4 mx-4 cursor-pointer transition-all duration-300 my-8"
+    >
+      <div class="flex justify-between items-center">
+        <h3 class="text-lg font-semibold text-white">
+          Can I get a refund if I change my mind after enrolling in a course?
+        </h3>
+        <span class="arrow text-xl transform transition-transform duration-300"
+          >▼</span
+        >
+      </div>
+      <p class="que-answer text-gray-300 mt-3 hidden">
+        Yes, we offer a 30-day money-back guarantee. If you are not satisfied
+        with the course content or experience within the first 30 days of
+        enrollment, you can request a refund, no questions asked. Your
+        satisfaction is our priority.
+      </p>
+    </div>
+
+    <!-- questions 7 -->
+
+    <div
+      class="que bg-gradient-to-br from-[#2A1E31] to-[#19192C] text-white rounded-2xl p-4 mx-4 cursor-pointer transition-all duration-300 my-8"
+    >
+      <div class="flex justify-between items-center">
+        <h3 class="text-lg font-semibold text-white">
+          Is there any certification provided upon course completion?
+        </h3>
+        <span class="arrow text-xl transform transition-transform duration-300"
+          >▼</span
+        >
+      </div>
+      <p class="que-answer text-gray-300 mt-3 hidden">
+        Yes, upon successfully completing a course at Pen Programmer, you will
+        receive a verified certificate of completion. The certificate can be
+        downloaded and shared on platforms like LinkedIn to showcase your new
+        skills and expertise.
+      </p>
+    </div>
+
+    <!-- questions 8 -->
+
+    <div
+      class="que bg-gradient-to-br from-[#2A1E31] to-[#19192C] text-white rounded-2xl p-4 mx-4 cursor-pointer transition-all duration-300 my-8"
+    >
+      <div class="flex justify-between items-center">
+        <h3 class="text-lg font-semibold text-white">
+          Is the course content accessible on mobile devices?
+        </h3>
+        <span class="arrow text-xl transform transition-transform duration-300"
+          >▼</span
+        >
+      </div>
+      <p class="que-answer text-gray-300 mt-3 hidden">
+        Yes, our platform is fully responsive, and the course content can be
+        accessed on desktops, laptops, tablets, and smartphones. Learn on the
+        go, and pick up right where you left off, regardless of the device you
+        use.
+      </p>
+    </div>
+
+    <footer class="mt-20">
+      <div
+        class="bg-gradient-to-b from-[#1b142c] to-[#1b142c] text-center text-white pt-12"
+      >
+        <div class="contactInfo">
+          <h1 class="text-3xl font-bold">Contact Information</h1>
+          <p class="pt-6 text-lg font-semibold">Office Address:</p>
+          <p class="pt-2 text-lg font-semibold">Bechimari, Assam 784514</p>
+          <p class="pt-2 text-lg font-semibold">
+            Email: support@penprogrammer.com
+          </p>
+          <p class="pt-2 text-lg font-semibold">Phone: 8638500289</p>
+        </div>
+
+        <div class="contactInfo pt-12">
+          <h1 class="text-3xl font-bold">Important Links</h1>
+          <p class="pt-6 text-lg font-semibold">
+            <a href="https://www.penprogrammer.com/terms-conditions"
+              >Terms & Conditions</a
+            >
+          </p>
+          <p class="pt-2 text-lg font-semibold">
+            <a href="https://www.penprogrammer.com/privacy-policy"
+              >Privacy Policy</a
+            >
+          </p>
+          <p class="pt-2 text-lg font-semibold">
+            <a href="https://www.penprogrammer.com/refund-policy"
+              >Refund Policy</a
+            >
+          </p>
+          <p class="pt-2 text-lg font-semibold">
+            <a href="https://www.penprogrammer.com/contact">Contact Us</a>
+          </p>
+        </div>
+
+        <div class="contactInfo pt-12">
+          <h1 class="text-3xl font-bold">Developer Tools</h1>
+          <p class="pt-6 text-lg font-semibold">
+            <a href="https://www.penprogrammer.com/terms-conditions"
+              >StackOverFlow</a
+            >
+          </p>
+          <p class="pt-2 text-lg font-semibold">
+            <a href="https://www.penprogrammer.com/privacy-policy">Github</a>
+          </p>
+          <p class="pt-2 text-lg font-semibold">
+            <a href="https://www.penprogrammer.com/refund-policy"
+              >DNS Checker</a
+            >
+          </p>
+          <p class="pt-2 text-lg font-semibold">
+            <a href="https://www.penprogrammer.com/contact">CheatSheet</a>
+          </p>
+        </div>
+
+        <!-- social icons -->
+
+        <div class="text-center pt-10 pb-10">
+          <h1 class="text-3xl font-bold tracking-wide">Social Links</h1>
+
+          <div class="flex justify-center gap-4 pt-6">
+            <!-- Facebook -->
+            <button
+              class="bg-[#575575] p-3 rounded-md border border-[#3a3860] hover:text-white hover:border-[#5b5a75] hover:scale-105 transition-all duration-300"
+            >
+              <i class="fa-brands fa-facebook-f text-lg"></i>
+            </button>
+
+            <button
+              class="bg-[#575575] p-3 rounded-md border border-[#2E2C45] hover:text-white hover:border-[#5b5a75] hover:scale-105 transition-all duration-300"
+            >
+              <i class="fa-brands fa-instagram text-lg"></i>
+            </button>
+
+            <button
+              class="bg-[#575575] p-3 rounded-md border border-[#3b3a50] hover:text-white hover:border-[#5b5a75] hover:scale-105 transition-all duration-300"
+            >
+              <i class="fa-brands fa-linkedin-in text-lg"></i>
+            </button>
+
+            <!-- GitHub -->
+            <button
+              class="bg-[#575575] p-3 rounded-md border border-[#3b3a50] hover:text-white hover:border-[#5b5a75] hover:scale-105 transition-all duration-300"
+            >
+              <i class="fa-brands fa-github text-lg"></i>
+            </button>
+
+            <!-- YouTube -->
+            <button
+              class="bg-[#575575] p-3 rounded-md border border-[#3b3a50] hover:text-white hover:border-[#5b5a75] hover:scale-105 transition-all duration-300"
+            >
+              <i class="fa-brands fa-youtube text-lg"></i>
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="certified text-white flex justify-center items-center text-center py-6"
+        >
+          <div>
+            <h1 class="text-lg font-medium mb-2">Certified By</h1>
+            <img
+              src="https://www.penprogrammer.com/_next/image?url=%2Flogo%2Fmsme.png&w=256&q=75"
+              alt="MSME Certification"
+              class="w-40 mx-auto mb-2 hover:opacity-100 transition-opacity duration-300 invert"
+            />
+            <p class="text-sm">Registered Under MSME Govt. India</p>
+            <p class="text-sm">
+              Certificate No:
+              <span class="text-gray-300">UDYAM-AS-07-0011375</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const btn = document.getElementById("btn");
+
+      const questions = document.querySelectorAll(".que");
 
       // mobile menu toggle
 
       btn.addEventListener("click", () => {
         mobile.classList.toggle("hidden");
+      });
+
+      questions.forEach((question) => {
+        question.addEventListener("click", () => {
+          // Close all other questions
+          questions.forEach((q) => {
+            if (q !== question) {
+              q.querySelector(".que-answer").classList.add("hidden");
+              q.querySelector(".arrow").classList.remove("rotate-180");
+            }
+          });
+
+          // Toggle the clicked one
+          const answer = question.querySelector(".que-answer");
+          const arrow = question.querySelector(".arrow");
+          answer.classList.toggle("hidden");
+          arrow.classList.toggle("rotate-180");
+        });
       });
     </script>
   </body>
