@@ -35,7 +35,7 @@
       <!-- Mobile Navigation -->
       <div
         id="mobile"
-        class="hidden text-[17px] left-0 top-23 absolute md:hidden text-white flex w-full flex-col items-left space-y-5 pl-5 pt-3 pb-5"
+        class="hidden text-[17px] left-0 md:hidden text-white flex w-full flex-col items-left space-y-5 pt-16 pb-5"
       >
         <a href="#home" class="hover:text-blue-400 transition">Home</a>
         <a href="#projects" class="hover:text-blue-400 transition">About</a>
@@ -654,7 +654,7 @@
       </div>
 
       <div
-        class="bg-gradient-to-br mt-[90px] p-4 from-[#19192C] via-[#1E1A2E] to-[#2A1E31] text-white rounded-2xl"
+        class="mt-[90px] p-4 bg-gradient-to-br from-[#19192C] via-[#1E1A2E] to-[#2A1E31] text-white rounded-2xl"
       >
         <img
           src="https://www.penprogrammer.com/_next/image?url=%2Ffeatures%2Fcertification.png&w=640&q=75"
@@ -671,5 +671,72 @@
         </p>
       </div>
     </div>
+
+    <!-- Asked questions -->
+
+    <h1
+      class="text-[#F87171] px-2 text-2xl font-extrabold text-center pb-6 mt-10"
+    >
+      Frequently <span class="text-white">Asked Questions</span>
+    </h1>
+
+    <!-- Question 1 -->
+
+    <div
+      class="que bg-gradient-to-br from-[#533163] to-[#19192C] text-white rounded-2xl p-4 mx-4 cursor-pointer transition-all duration-300 my-8"
+    >
+      <div class="flex justify-between items-center">
+        <h3 class="text-lg font-semibold text-white">
+          What is Pen Programmer?
+        </h3>
+        <span class="arrow text-xl transform transition-transform duration-300"
+          >▼</span
+        >
+      </div>
+      <p class="que-answer text-gray-300 mt-3 hidden border-t-2">
+        Pen Programmer is an online learning platform that offers a variety of
+        technical courses to help you excel in the digital world.
+      </p>
+    </div>
+
+    <!-- Question 2 -->
+
+    <div
+      class="que bg-gradient-to-br from-[#533163] to-[#19192C] text-white rounded-2xl p-4 mx-4 cursor-pointer transition-all duration-300 my-8"
+    >
+      <div class="flex justify-between items-center">
+        <h3 class="text-lg font-semibold text-white">
+          How do I enroll in a course at Pen Programmer?
+        </h3>
+        <span class="arrow text-xl transform transition-transform duration-300"
+          >▼</span
+        >
+      </div>
+      <p class="que-answer text-gray-300 mt-3 hidden">
+        Enrolling in a course at Pen Programmer is simple. Just visit our
+        website, browse through the course catalog, and select the course that
+        interests you. Click on the 'Enroll Now' button, and you'll be guided
+        through the enrollment process. Once enrolled, you'll have immediate
+        access to the course content
+      </p>
+    </div>
+
+    <script>
+      const que = document.querySelector(".que");
+      const btn = document.getElementById("btn");
+      const mobile = document.getElementById("mobile");
+
+      //  Question Toggle
+      que.addEventListener("click", () => {
+        que.querySelector(".que-answer").classList.toggle("hidden");
+        que.querySelector(".arrow").classList.toggle("rotate-180");
+      });
+
+      // mobile menu toggle
+
+      btn.addEventListener("click", () => {
+        mobile.classList.toggle("hidden");
+      });
+    </script>
   </body>
 </html>
