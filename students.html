@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Premium Students</title>
+  </head>
+  <body class="bg-gradient-to-br from-[#050E28] via-[#1A0C20] to-[#05051A]">
+    <nav
+      class="w-full p-[26px] bg-gradient-to-br from-[#16233D] via-[#17182D] to-[#17172A]"
+    >
+      <div class="flex justify-between items-center">
+        <!-- logo -->
+        <img
+          src="https://www.penprogrammer.com/logo/logo-white.png"
+          alt="Pen programmer logo"
+          class="h-10 md:px-4 md:h-11 lg:pl-32"
+        />
+
+        <!-- Desktop  -->
+        <ul
+          class="hidden lg:flex lg:items-center gap-12 text-white font-medium"
+        >
+          <li>
+            <a href="#home" class="hover:text-blue-400">Home</a>
+          </li>
+          <li>
+            <a href="#About" class="hover:text-blue-400">About</a>
+          </li>
+          <li>
+            <a href="#Courses" class="hover:text-blue-400">Courses</a>
+          </li>
+          <li>
+            <a href="students.html" class="hover:text-blue-400 lg:text-nowrap"
+              >Students</a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="hover:text-blue-400 text-nowrap"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+        <a
+          href="#StudentPortal"
+          class="hover:text-blue-400 lg:text-nowrap border-2 hidden lg:block border-[#1aa8ef] rounded-full px-7 py-2 font-sans font-normal text-white"
+          >Student Portal</a
+        >
+        <!-- Mobile Menu -->
+        <button
+          id="btn"
+          class="text-3xl md:text-2xl md:px-8 text-white lg:hidden cursor-pointer"
+        >
+          ☰
+        </button>
+      </div>
+
+      <!-- Mobile Navigation -->
+      <div
+        id="mobile"
+        class="hidden text-[17px] left-0 text-white flex w-full flex-col items-left space-y-5 pt-16 pb-5"
+      >
+        <a href="#home" class="hover:text-blue-400 transition">Home</a>
+        <a href="#projects" class="hover:text-blue-400 transition">About</a>
+        <a href="#skills" class="hover:text-blue-400 transition">Courses</a>
+        <a href="#about" class="hover:text-blue-400 transition">Students</a>
+        <a href="#contact" class="hover:text-blue-400 transition">Contact Us</a>
+        <button class="w-full border-2 border-[#1aa8ef] rounded-full p-2">
+          Student Portal
+        </button>
+      </div>
+    </nav>
+
+    <!-- hero section -->
+    <div
+      style="
+        background-image: url('https://www.penprogrammer.com/elements/slices.png');
+        background-repeat: no-repeat;
+        background-position: 100%;
+        background-attachment: fixed;
+      "
+    >
+      <div class="lg:px-[130px]">
+        <div class="flex items-center justify-between lg:mt-12 mt-7">
+          <h1
+            class="text-red-400 px-6 text-2xl md:text-3xl lg:text-6xl font-bold text-center md:px-4 lg:px-6"
+          >
+            Batch 1 <span class="text-white font-bold">Students</span>
+          </h1>
+        </div>
+
+        <!-- Student 1 -->
+        <div
+          class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 text-center text-white px-6 py-6"
+        >
+          <div
+            class="p-2 bg-gradient-to-br from-[#19192C] via-[#1E1A2E] to-[#2A1E31] rounded-2xl"
+          >
+            <img
+              src="https://www.penprogrammer.com/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fimdad-library.appspot.com%2Fo%2Fstudents%252F1695967107172%3Falt%3Dmedia%26token%3D62825d10-89cc-405c-affb-9089a7214e68&w=1920&q=75"
+              alt="Sweata Roy"
+              class="rounded-3xl p-2"
+            />
+            <h1 class="text-lg font-bold py-1">Sweata Roy</h1>
+            <p class="text-xs md:text-sm">Web Development</p>
+          </div>
+
+          <div
+            class="p-2 bg-gradient-to-br from-[#19192C] via-[#1E1A2E] to-[#2A1E31] rounded-2xl"
+          >
+            <img src="mee.jpg" alt="Mahmudul Hassan" class="rounded-3xl p-2" />
+            <h1 class="text-lg font-bold py-1">Mahmudul Hassan</h1>
+            <p class="text-xs md:text-sm">Web Development</p>
+          </div>
+
+          <!-- Student 2 -->
+          <div
+            class="p-2 bg-gradient-to-br from-[#19192C] via-[#1E1A2E] to-[#2A1E31] rounded-2xl"
+          >
+            <img
+              src="https://www.penprogrammer.com/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fimdad-library.appspot.com%2Fo%2Fstudents%252F1695967050852%3Falt%3Dmedia%26token%3D272b06a3-2446-447f-9dab-2aab32d4851f&w=1920&q=75"
+              alt="Sadek Ali"
+              class="rounded-3xl p-2"
+            />
+            <h1 class="text-lg font-bold py-1">Sadek Ali</h1>
+            <p class="text-xs md:text-sm">Web Development</p>
+          </div>
+
+          <!-- Student 3 -->
+          <div
+            class="p-2 bg-gradient-to-br from-[#19192C] via-[#1E1A2E] to-[#2A1E31] rounded-2xl"
+          >
+            <img
+              src="https://www.penprogrammer.com/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fimdad-library.appspot.com%2Fo%2Fstudents%252F1695967281055%3Falt%3Dmedia%26token%3D124c260e-1588-4c2c-a1eb-c457f31277a5&w=1920&q=75"
+              alt="Ashiqul Hoque"
+              class="rounded-3xl p-2"
+            />
+            <h1 class="text-lg font-bold py-1">Ashiqul Hoque</h1>
+            <p class="text-xs md:text-sm">Web Development</p>
+          </div>
+
+          <!-- Student 4 -->
+          <div
+            class="p-2 bg-gradient-to-br from-[#19192C] via-[#1E1A2E] to-[#2A1E31] rounded-2xl"
+          >
+            <img
+              src="https://www.penprogrammer.com/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fimdad-library.appspot.com%2Fo%2Fstudents%252F1695967210159%3Falt%3Dmedia%26token%3D14838c7e-e8e3-48f6-bbcc-cf8318006e17&w=1920&q=75"
+              alt="Maksed Ali"
+              class="rounded-3xl p-2"
+            />
+            <h1 class="text-lg font-bold py-1">Maksed Ali</h1>
+            <p class="text-xs md:text-sm">Web Development</p>
+          </div>
+
+          <!-- Student 5 -->
+          <div
+            class="p-2 bg-gradient-to-br from-[#19192C] via-[#1E1A2E] to-[#2A1E31] rounded-2xl"
+          >
+            <img
+              src="https://www.penprogrammer.com/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fimdad-library.appspot.com%2Fo%2Fstudents%252F1695967323416%3Falt%3Dmedia%26token%3D2db4b6e5-b294-4617-a8e7-0ee4a35394c5&w=1920&q=75"
+              alt="Maksed Ali"
+              class="rounded-3xl p-2"
+            />
+            <h1 class="text-lg font-bold py-1">Jakaria Hussain</h1>
+            <p class="text-xs md:text-sm">Web Development</p>
+          </div>
+        </div>
+
+        <!-- batch 2 -->
+        <div class="flex items-center justify-between lg:mt-12">
+          <h1
+            class="text-red-400 px-6 text-2xl md:text-3xl lg:text-6xl font-bold text-center md:px-4 lg:px-6"
+          >
+            Batch 2 <span class="text-white font-bold">Students</span>
+          </h1>
+        </div>
+
+        <!-- Student 1 -->
+        <div
+          class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 text-center text-white px-6 py-6"
+        >
+          <div
+            class="p-2 bg-gradient-to-br from-[#19192C] via-[#1E1A2E] to-[#2A1E31] rounded-2xl"
+          >
+            <img
+              src="https://www.penprogrammer.com/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fimdad-library.appspot.com%2Fo%2Fstudents%252F1695967525805%3Falt%3Dmedia%26token%3D696e39a1-a0d1-4c89-a7f3-ad6e136557b1&w=1920&q=75"
+              alt="Sweata Roy"
+              class="rounded-3xl p-2"
+            />
+            <h1 class="text-lg font-bold py-1">Arifus Jaman</h1>
+            <p class="text-xs md:text-sm">Web Development</p>
+          </div>
+
+          <div
+            class="p-2 bg-gradient-to-br from-[#19192C] via-[#1E1A2E] to-[#2A1E31] rounded-2xl"
+          >
+            <img
+              src="https://www.penprogrammer.com/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fimdad-library.appspot.com%2Fo%2Fstudents%252F1695967425354%3Falt%3Dmedia%26token%3Da200e40d-a855-4071-9f0e-0b979887269f&w=1920&q=75"
+              alt="Mahmudul Hassan"
+              class="rounded-3xl p-2"
+            />
+            <h1 class="text-lg font-bold py-1">Inamul Hoque</h1>
+            <p class="text-xs md:text-sm">Web Development</p>
+          </div>
+
+          <!-- Student 2 -->
+          <div
+            class="p-2 bg-gradient-to-br from-[#19192C] via-[#1E1A2E] to-[#2A1E31] rounded-2xl"
+          >
+            <img
+              src="https://www.penprogrammer.com/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fimdad-library.appspot.com%2Fo%2Fstudents%252F1695967374737%3Falt%3Dmedia%26token%3Dfd50b6be-742f-41d1-bdbb-854b27d460ce&w=1920&q=75"
+              alt="Sadek Ali"
+              class="rounded-3xl p-2"
+            />
+            <h1 class="text-lg font-bold py-1">Abu Bakkar Siddique</h1>
+            <p class="text-xs md:text-sm">Web Development</p>
+          </div>
+
+          <!-- Student 3 -->
+          <div
+            class="p-2 bg-gradient-to-br from-[#19192C] via-[#1E1A2E] to-[#2A1E31] rounded-2xl"
+          >
+            <img
+              src="https://www.penprogrammer.com/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fimdad-library.appspot.com%2Fo%2Fstudents%252F1695967474052%3Falt%3Dmedia%26token%3Df6a22a6e-6a2f-4b2a-8c41-2069192fa94d&w=1920&q=75"
+              alt="Ashiqul Hoque"
+              class="rounded-3xl p-2"
+            />
+            <h1 class="text-lg font-bold py-1">Mustafizur Rahman</h1>
+            <p class="text-xs md:text-sm">Web Development</p>
+          </div>
+
+          <!-- Student 4 -->
+          <div
+            class="p-2 bg-gradient-to-br from-[#19192C] via-[#1E1A2E] to-[#2A1E31] rounded-2xl"
+          >
+            <img
+              src="https://www.penprogrammer.com/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fimdad-library.appspot.com%2Fo%2Fstudents%252F1695967791539%3Falt%3Dmedia%26token%3De2751dba-26be-4cd5-9f80-44ac67123c51&w=1920&q=75"
+              alt="Maksed Ali"
+              class="rounded-3xl p-2"
+            />
+            <h1 class="text-lg font-bold py-1">Saidur Rahman</h1>
+            <p class="text-xs md:text-sm">Web Development</p>
+          </div>
+
+          <!-- Student 5 -->
+          <div
+            class="p-2 bg-gradient-to-br from-[#19192C] via-[#1E1A2E] to-[#2A1E31] rounded-2xl"
+          >
+            <img
+              src="https://www.penprogrammer.com/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fimdad-library.appspot.com%2Fo%2Fstudents%252F1695968525808%3Falt%3Dmedia%26token%3D378cb3e3-d518-431b-9408-e295607e30ef&w=1920&q=75"
+              alt="Maksed Ali"
+              class="rounded-3xl p-2"
+            />
+            <h1 class="text-lg font-bold py-1">Asad Ali</h1>
+            <p class="text-xs md:text-sm">Web Development</p>
+          </div>
+
+          <!-- Student 6 -->
+          <div
+            class="p-2 bg-gradient-to-br from-[#19192C] via-[#1E1A2E] to-[#2A1E31] rounded-2xl"
+          >
+            <img
+              src="https://www.penprogrammer.com/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fimdad-library.appspot.com%2Fo%2Fstudents%252F1695967575846%3Falt%3Dmedia%26token%3D92046540-c3ed-4f22-bc8e-1a597f6b47e6&w=1920&q=75"
+              alt="Maksed Ali"
+              class="rounded-3xl p-2"
+            />
+            <h1 class="text-lg font-bold py-1">Aynuddin</h1>
+            <p class="text-xs md:text-sm">Web Development</p>
+          </div>
+        </div>
+
+        <!-- Batch 3 -->
+
+        <div class="flex items-center justify-between lg:mt-12">
+          <h1
+            class="text-red-400 px-6 text-2xl md:text-3xl lg:text-6xl font-bold text-center md:px-4 lg:px-6"
+          >
+            Batch 3 <span class="text-white font-bold">Students</span>
+          </h1>
+        </div>
+
+        <!-- Student 1 -->
+        <div
+          class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 text-center text-white px-6 py-6"
+        >
+          <div
+            class="p-2 bg-gradient-to-br from-[#19192C] via-[#1E1A2E] to-[#2A1E31] rounded-2xl"
+          >
+            <img
+              src="https://www.penprogrammer.com/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fpen-programmer.appspot.com%2Fo%2Fstudents%252F1713551487359%3Falt%3Dmedia%26token%3Dcc956761-7ecf-4c30-9b39-da8e5fe62441&w=1920&q=75"
+              alt="Sweata Roy"
+              class="rounded-3xl p-2"
+            />
+            <h1 class="text-lg font-bold py-1">Rashid Ul Islam Mirdha</h1>
+            <p class="text-xs md:text-sm">Web Development</p>
+          </div>
+
+          <div
+            class="p-2 bg-gradient-to-br from-[#19192C] via-[#1E1A2E] to-[#2A1E31] rounded-2xl"
+          >
+            <img
+              src="https://www.penprogrammer.com/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fpen-programmer.appspot.com%2Fo%2Fstudents%252F1713551564880%3Falt%3Dmedia%26token%3D06c40b25-ac83-4e3b-af8a-195b4b2427ce&w=1920&q=75"
+              alt="Mahmudul Hassan"
+              class="rounded-3xl p-2"
+            />
+            <h1 class="text-lg font-bold py-1">Mahabul Hoque</h1>
+            <p class="text-xs md:text-sm">Web Development</p>
+          </div>
+
+          <!-- Student 2 -->
+          <div
+            class="p-2 bg-gradient-to-br from-[#19192C] via-[#1E1A2E] to-[#2A1E31] rounded-2xl"
+          >
+            <img
+              src="https://www.penprogrammer.com/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fpen-programmer.appspot.com%2Fo%2Fstudents%252F1713551629233%3Falt%3Dmedia%26token%3Dc5fbd37f-0d4a-4a18-8275-f556112c7853&w=1920&q=75"
+              alt="Sadek Ali"
+              class="rounded-3xl p-2"
+            />
+            <h1 class="text-lg font-bold py-1">Karimullah Darul Islam</h1>
+            <p class="text-xs md:text-sm">Web Development</p>
+          </div>
+
+          <!-- Student 3 -->
+          <div
+            class="p-2 bg-gradient-to-br from-[#19192C] via-[#1E1A2E] to-[#2A1E31] rounded-2xl"
+          >
+            <img
+              src="https://www.penprogrammer.com/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fpen-programmer.appspot.com%2Fo%2Fstudents%252F1713551710092%3Falt%3Dmedia%26token%3D23e75cd3-3355-40a3-a971-f990b7535dff&w=1920&q=75"
+              alt="Ashiqul Hoque"
+              class="rounded-3xl p-2"
+            />
+            <h1 class="text-lg font-bold py-1">Fakaruddin Ali</h1>
+            <p class="text-xs md:text-sm">Web Development</p>
+          </div>
+
+          <!-- Student 4 -->
+          <div
+            class="p-2 bg-gradient-to-br from-[#19192C] via-[#1E1A2E] to-[#2A1E31] rounded-2xl"
+          >
+            <img
+              src="https://www.penprogrammer.com/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fpen-programmer.appspot.com%2Fo%2Fstudents%252F1713624190761%3Falt%3Dmedia%26token%3D40a40d89-75c7-4226-ba68-83112fbb51c7&w=1920&q=75"
+              alt="Maksed Ali"
+              class="rounded-3xl p-2"
+            />
+            <h1 class="text-lg font-bold py-1">Nasim Ahmed</h1>
+            <p class="text-xs md:text-sm">Web Development</p>
+          </div>
+
+          <!-- Student 5 -->
+          <div
+            class="p-2 bg-gradient-to-br from-[#19192C] via-[#1E1A2E] to-[#2A1E31] rounded-2xl"
+          >
+            <img
+              src="https://www.penprogrammer.com/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fpen-programmer.appspot.com%2Fo%2Fstudents%252F1713624218113%3Falt%3Dmedia%26token%3D5f3b870b-2eae-40f2-9504-7fb480a89133&w=1920&q=75"
+              alt="Maksed Ali"
+              class="rounded-3xl p-2"
+            />
+            <h1 class="text-lg font-bold py-1">Manesh Chowhan</h1>
+            <p class="text-xs md:text-sm">Web Development</p>
+          </div>
+
+          <!-- Student 6 -->
+          <div
+            class="p-2 bg-gradient-to-br from-[#19192C] via-[#1E1A2E] to-[#2A1E31] rounded-2xl"
+          >
+            <img
+              src="https://www.penprogrammer.com/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fpen-programmer.appspot.com%2Fo%2Fstudents%252F1713624553033%3Falt%3Dmedia%26token%3D542d4cc4-0bdf-47d7-b054-ca035e99b9e9&w=1920&q=75"
+              alt="Maksed Ali"
+              class="rounded-3xl p-2"
+            />
+            <h1 class="text-lg font-bold py-1">Abdur Refaz</h1>
+            <p class="text-xs md:text-sm">Web Development</p>
+          </div>
+
+          <!-- Student 7 -->
+          <div
+            class="p-2 bg-gradient-to-br from-[#19192C] via-[#1E1A2E] to-[#2A1E31] rounded-2xl"
+          >
+            <img
+              src="https://www.penprogrammer.com/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fpen-programmer.appspot.com%2Fo%2Fstudents%252F1713624791576%3Falt%3Dmedia%26token%3D5167aee0-4412-4042-ae92-81b9d2628c7c&w=1920&q=75"
+              alt="Maksed Ali"
+              class="rounded-3xl p-2"
+            />
+            <h1 class="text-lg font-bold py-1">Enamul Hoque</h1>
+            <p class="text-xs md:text-sm">Web Development</p>
+          </div>
+
+          <!-- Student 8 -->
+          <div
+            class="p-2 bg-gradient-to-br from-[#19192C] via-[#1E1A2E] to-[#2A1E31] rounded-2xl"
+          >
+            <img
+              src="https://www.penprogrammer.com/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fpen-programmer.appspot.com%2Fo%2Fstudents%252F1714024813332%3Falt%3Dmedia%26token%3De2df744c-726c-4e52-8976-f0de868eb29e&w=1920&q=75"
+              alt="Maksed Ali"
+              class="rounded-3xl p-2"
+            />
+            <h1 class="text-lg font-bold py-1">Saidur Rahman</h1>
+            <p class="text-xs md:text-sm">Web Development</p>
+          </div>
+          <!-- Student 9 -->
+          <div
+            class="p-2 bg-gradient-to-br from-[#19192C] via-[#1E1A2E] to-[#2A1E31] rounded-2xl"
+          >
+            <img
+              src="https://www.penprogrammer.com/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fpen-programmer.appspot.com%2Fo%2Fstudents%252F1729335452449%3Falt%3Dmedia%26token%3D7ac558e9-0bee-466f-87e4-f59e73e33070&w=1920&q=75"
+              alt="Maksed Ali"
+              class="rounded-3xl p-2"
+            />
+            <h1 class="text-lg font-bold py-1">Jahirul Hoque</h1>
+            <p class="text-xs md:text-sm">Web Development</p>
+          </div>
+          <!-- Student 10 -->
+          <div
+            class="p-2 bg-gradient-to-br from-[#19192C] via-[#1E1A2E] to-[#2A1E31] rounded-2xl"
+          >
+            <img
+              src="https://www.penprogrammer.com/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fpen-programmer.appspot.com%2Fo%2Fstudents%252F1729335519795%3Falt%3Dmedia%26token%3D52294625-d03b-462e-9c51-9e7c9acf8eb4&w=1920&q=75"
+              alt="Maksed Ali"
+              class="rounded-3xl p-2"
+            />
+            <h1 class="text-lg font-bold py-1">Mahmudur Hassan</h1>
+            <p class="text-xs md:text-sm">Web Development</p>
+          </div>
+          <!-- Student 11 -->
+          <div
+            class="p-2 bg-gradient-to-br from-[#19192C] via-[#1E1A2E] to-[#2A1E31] rounded-2xl"
+          >
+            <img
+              src="https://www.penprogrammer.com/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fpen-programmer.appspot.com%2Fo%2Fstudents%252F1729335670448%3Falt%3Dmedia%26token%3D174386ac-d17b-4695-b6e4-8e669f94f376&w=1920&q=75"
+              alt="Maksed Ali"
+              class="rounded-3xl p-2"
+            />
+            <h1 class="text-lg font-bold py-1">Sajidul Islam</h1>
+            <p class="text-xs md:text-sm">Web Development</p>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between lg:mt-12">
+          <h1
+            class="text-red-400 px-6 text-2xl md:text-3xl lg:text-6xl font-bold text-center md:px-4 lg:px-6"
+          >
+            Batch 4 <span class="text-white font-bold">Students</span>
+          </h1>
+        </div>
+
+        <!-- Student 1 -->
+        <div
+          class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 text-center text-white px-6 py-6"
+        >
+          <div
+            class="p-2 bg-gradient-to-br from-[#19192C] via-[#1E1A2E] to-[#2A1E31] rounded-2xl"
+          >
+            <img
+              src="https://www.penprogrammer.com/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fpen-programmer.appspot.com%2Fo%2Fstudents%252F1729335168419%3Falt%3Dmedia%26token%3D68eb2c35-892f-4c74-b1a9-efd05ef67270&w=1920&q=75"
+              alt="Sweata Roy"
+              class="rounded-3xl p-2"
+            />
+            <h1 class="text-lg font-bold py-1">Bishal Soni</h1>
+            <p class="text-xs md:text-sm">Web Development</p>
+          </div>
+
+          <div
+            class="p-2 bg-gradient-to-br from-[#19192C] via-[#1E1A2E] to-[#2A1E31] rounded-2xl"
+          >
+            <img
+              src="https://www.penprogrammer.com/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fpen-programmer.appspot.com%2Fo%2Fstudents%252F1729335218449%3Falt%3Dmedia%26token%3Ddfaa3264-1c77-40b6-94dc-dcad608c3e08&w=1920&q=75"
+              alt="Mahmudul Hassan"
+              class="rounded-3xl p-2"
+            />
+            <h1 class="text-lg font-bold py-1">Guljar Hussain</h1>
+            <p class="text-xs md:text-sm">Web Development</p>
+          </div>
+
+          <!-- Student 2 -->
+          <div
+            class="p-2 bg-gradient-to-br from-[#19192C] via-[#1E1A2E] to-[#2A1E31] rounded-2xl"
+          >
+            <img
+              src="https://www.penprogrammer.com/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fpen-programmer.appspot.com%2Fo%2Fstudents%252F1729335355551%3Falt%3Dmedia%26token%3D139fa9d1-58e2-4a7d-904f-8c679036a5d7&w=1920&q=75"
+              alt="Sadek Ali"
+              class="rounded-3xl p-2"
+            />
+            <h1 class="text-lg font-bold py-1">Hussain Ali</h1>
+            <p class="text-xs md:text-sm">Web Development</p>
+          </div>
+
+          <!-- Student 3 -->
+          <div
+            class="p-2 bg-gradient-to-br from-[#19192C] via-[#1E1A2E] to-[#2A1E31] rounded-2xl"
+          >
+            <img
+              src="https://www.penprogrammer.com/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fpen-programmer.appspot.com%2Fo%2Fstudents%252F1729335567618%3Falt%3Dmedia%26token%3D9bc103ed-a662-4cd2-bb69-91f2c3a98aee&w=1920&q=75"
+              alt="Ashiqul Hoque"
+              class="rounded-3xl p-2"
+            />
+            <h1 class="text-lg font-bold py-1">Ramizul Hoque</h1>
+            <p class="text-xs md:text-sm">Web Development</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="mt-20">
+      <div
+        class="bg-gradient-to-b from-[#1b142c] to-[#1b142c] pt-12 lg:pt-4 text-center lg:text-start text-white lg:flex lg:items-center lg:justify-center lg:gap-8"
+      >
+        <div class="contactInfo">
+          <h1 class="text-3xl font-bold lg:text-xl">Contact Information</h1>
+          <p class="pt-6 lg:pt-3 text-lg lg:text-base">Office Address:</p>
+          <p class="pt-2 text-lg lg:text-base">Bechimari, Assam 784514</p>
+          <p class="pt-2 text-lg lg:text-base">
+            Email: support@penprogrammer.com
+          </p>
+          <p class="pt-2 text-lg lg:text-base">Phone: 8638500289</p>
+        </div>
+
+        <div class="contactInfo">
+          <h1 class="text-3xl font-bold lg:text-xl">Important Links</h1>
+          <p class="pt-6 lg:pt-3 text-lg lg:text-base">
+            <a
+              href="https://www.penprogrammer.com/terms-conditions"
+              target="_blank"
+              >Terms & Conditions</a
+            >
+          </p>
+          <p class="pt-2 text-lg lg:text-base">
+            <a
+              href="https://www.penprogrammer.com/privacy-policy"
+              target="_blank"
+              >Privacy Policy</a
+            >
+          </p>
+          <p class="pt-2 text-lg lg:text-base">
+            <a
+              href="https://www.penprogrammer.com/refund-policy"
+              target="_blank"
+              >Refund Policy</a
+            >
+          </p>
+          <p class="pt-2 text-lg lg:text-base">
+            <a href="https://www.penprogrammer.com/contact" target="_blank"
+              >Contact Us</a
+            >
+          </p>
+        </div>
+
+        <div class="contactInfo">
+          <h1 class="text-3xl font-bold lg:text-xl">Developer Tools</h1>
+          <p class="pt-6 lg:pt-3 text-lg font-semibold lg:text-base">
+            <a href="">StackOverFlow</a>
+          </p>
+          <p class="pt-2 text-lg lg:text-base">
+            <a href="">Github</a>
+          </p>
+          <p class="pt-2 text-lg lg:text-base">
+            <a href="">DNS Checker</a>
+          </p>
+          <p class="pt-2 text-lg lg:text-base">
+            <a href="">CheatSheet</a>
+          </p>
+        </div>
+
+        <!-- social icons -->
+
+        <div class="text-center">
+          <h1 class="text-3xl font-bold tracking-wide lg:text-xl">
+            Social Links
+          </h1>
+
+          <div class="flex justify-center gap-4 pt-6">
+            <!-- Facebook -->
+            <button
+              class="bg-[#575575] p-3 rounded-md border border-[#3a3860] hover:text-white hover:border-[#5b5a75] hover:scale-105 transition-all duration-300"
+            >
+              <i class="fa-brands fa-facebook-f text-lg"></i>
+            </button>
+
+            <button
+              class="bg-[#575575] p-3 rounded-md border border-[#2E2C45] hover:text-white hover:border-[#5b5a75] hover:scale-105 transition-all duration-300"
+            >
+              <i class="fa-brands fa-instagram text-lg"></i>
+            </button>
+
+            <button
+              class="bg-[#575575] p-3 rounded-md border border-[#3b3a50] hover:text-white hover:border-[#5b5a75] hover:scale-105 transition-all duration-300"
+            >
+              <i class="fa-brands fa-linkedin-in text-lg"></i>
+            </button>
+
+            <!-- GitHub -->
+            <button
+              class="bg-[#575575] p-3 rounded-md border border-[#3b3a50] hover:text-white hover:border-[#5b5a75] hover:scale-105 transition-all duration-300"
+            >
+              <i class="fa-brands fa-github text-lg"></i>
+            </button>
+
+            <!-- YouTube -->
+            <button
+              class="bg-[#575575] p-3 rounded-md border border-[#3b3a50] hover:text-white hover:border-[#5b5a75] hover:scale-105 transition-all duration-300"
+            >
+              <i class="fa-brands fa-youtube text-lg"></i>
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="certified text-white flex justify-center items-center text-center py-6"
+        >
+          <div>
+            <h1 class="text-lg font-medium mb-2 lg:text-xl">Certified By</h1>
+            <img
+              src="https://www.penprogrammer.com/_next/image?url=%2Flogo%2Fmsme.png&w=256&q=75"
+              alt="MSME Certification"
+              class="w-40 mx-auto mb-2 hover:opacity-100 transition-opacity duration-300 invert"
+            />
+            <p class="text-sm">Registered Under MSME Govt. India</p>
+            <p class="text-sm">
+              Certificate No:
+              <span class="text-gray-300">UDYAM-AS-07-0011375</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bg-gradient-to-b from-[#1b142c] to-[#1b142c] flex flex-col items-center justify-center py-12"
+      >
+        <img
+          src="https://www.penprogrammer.com/_next/image?url=%2Flogo%2Flogo-white.png&w=640&q=75"
+          alt=""
+          class="lg:h-10 h-11"
+        />
+
+        <h3 class="text-white">© 2023 All Rights Reserved | Pen Programmer</h3>
+      </div>
+    </footer>
+
+    <script>
+      const btn = document.getElementById("btn");
+
+      const questions = document.querySelectorAll(".que");
+
+      // mobile menu toggle
+
+      btn.addEventListener("click", () => {
+        mobile.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
