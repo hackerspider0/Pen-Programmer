@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>About Us</title>
+  </head>
+  <body class="bg-gradient-to-br from-[#050E28] via-[#1A0C20] to-[#05051A]">
+    <nav
+      class="w-full py-[26px] bg-gradient-to-br from-[#16233D] via-[#17182D] to-[#17172A]"
+    >
+      <div class="flex justify-between items-center md:px-5">
+        <!-- logo -->
+        <img
+          src="https://www.penprogrammer.com/logo/logo-white.png"
+          alt="Pen programmer logo"
+          class="h-10 md:px-4 md:h-11 lg:pl-32 pl-4"
+        />
+
+        <!-- Desktop  -->
+        <ul
+          class="hidden lg:flex lg:items-center gap-12 text-white font-medium"
+        >
+          <li>
+            <a href="#home" class="hover:text-blue-400">Home</a>
+          </li>
+          <li>
+            <a href="#About" class="hover:text-blue-400">About</a>
+          </li>
+          <li>
+            <a href="#Courses" class="hover:text-blue-400">Courses</a>
+          </li>
+          <li>
+            <a href="students.html" class="hover:text-blue-400 lg:text-nowrap"
+              >Students</a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="hover:text-blue-400 text-nowrap"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+        <a
+          href="#StudentPortal"
+          class="hover:text-blue-400 lg:text-nowrap border-2 hidden lg:block border-[#1aa8ef] rounded-full px-7 py-2 font-sans font-normal text-white"
+          >Student Portal</a
+        >
+        <!-- Mobile Menu -->
+        <button
+          id="btn"
+          class="text-3xl md:text-2xl md:px-8 pr-4 text-white lg:hidden cursor-pointer"
+        >
+          ☰
+        </button>
+      </div>
+
+      <!-- Mobile Navigation -->
+      <div
+        id="mobile"
+        class="hidden text-[17px] pl-4 left-0 text-white flex w-full flex-col items-left space-y-5 pt-16 pb-5"
+      >
+        <a href="#home" class="hover:text-blue-400 transition">Home</a>
+        <a href="#projects" class="hover:text-blue-400 transition">About</a>
+        <a href="#skills" class="hover:text-blue-400 transition">Courses</a>
+        <a href="#about" class="hover:text-blue-400 transition">Students</a>
+        <a href="#contact" class="hover:text-blue-400 transition">Contact Us</a>
+        <button class="w-full border-2 border-[#1aa8ef] rounded-full p-2">
+          Student Portal
+        </button>
+      </div>
+    </nav>
+
+    <!-- hero section -->
+    <div
+      class="pb-12 pl-4 flex flex-col lg:flex-row justify-center items-center"
+    >
+      <img
+        src="https://www.penprogrammer.com/_next/image?url=%2Felements%2Fdeveloper-2.png&w=828&q=75"
+        alt=""
+        class="w-[410px] h-[410px] lg:w-[510px] lg:h-auto lg:ml-36"
+      />
+      <div class="md:px-5 lg:pr-36">
+        <h2
+          class="text-[36px] md:text-[40px] sm:text-[30px] lg:text-[55px] md:font-bold bolder text-transparent bg-clip-text bg-gradient-to-r from-sky-200 to-blue-600 lg:font-bold font-semibold"
+        >
+          About Us
+        </h2>
+        <p class="text-white pr-3">
+          Welcome to Pen Programmer, your gateway to mastering the world of
+          technology! At Pen Programmer, we are committed to empowering
+          individuals with the skills they need to thrive in today’s digital
+          landscape. Our comprehensive range of technical courses, including web
+          development, app development, graphics designing, and computer basics,
+          are designed to cater to beginners and seasoned tech enthusiasts
+          alike.
+        </p>
+
+        <p class="text-white pr-3 pt-4">
+          Beyond just courses, we pride ourselves on being a hub of creativity
+          and innovation. Our team of skilled professionals not only imparts
+          knowledge but also crafts exceptional projects that leave a lasting
+          impact. Whether it’s a custom app that transforms your business ideas
+          into reality, a dynamic website that captures your brand essence, or a
+          captivating logo that tells your unique story, we bring your visions
+          to life.
+        </p>
+      </div>
+    </div>
+
+    <h1
+      class="px-4 text-white text-2xl md:text-3xl font-bold text-center md:w-full lg:text-6xl lg:px-36"
+    >
+      To bring <span class="text-[#38BDF8]">inspiration</span> and
+      <span class="text-[#4ADE80]"> innovation </span> to every business in the
+      world
+    </h1>
+
+    <!-- our mission -->
+    <div class="flex flex-col justify-center items-center lg:flex-row md:px-5">
+      <img
+        src="https://www.penprogrammer.com/_next/image?url=%2Felements%2Fdeveloper-3.png&w=750&q=75"
+        alt=""
+        class="h-[375px] w-[375px] md:w-[350px] md:h-[390px] md:pt-8 lg:w-[520px] lg:h-auto lg:ml-36"
+      />
+      <div class="px-4 md:px-5 lg:pr-36">
+        <h1 class="text-rose-400 text-3xl pb-5 font-bold">Our Mission</h1>
+        <p class="text-white">
+          Our mission is to provide affordable and accessible digital solutions
+          to businesses of all sizes. We believe that every company deserves to
+          have a strong online presence, regardless of budget constraints.
+          That’s why we offer EMI options at 0% interest for low budget clients,
+          making it easier for them to invest in their digital growth. Our goal
+          is to empower businesses with the tools and resources they need to
+          succeed in the digital world, and we are committed to delivering
+          results that make a real difference.
+        </p>
+        <h3 class="text-white text-2xl font-bold pt-5 lg:text-xl">
+          Where Creativity Meets Code: Unleash Your Digital Potential
+        </h3>
+      </div>
+    </div>
+
+    <div
+      class="flex flex-col lg:flex-row-reverse justify-center items-center md:px-5"
+    >
+      <img
+        src="https://www.penprogrammer.com/_next/image?url=%2Felements%2Fdeveloper-4.png&w=750&q=75"
+        alt=""
+        class="w-[380px] lg:w-[520px] lg:h-auto lg:mr-36"
+      />
+      <div class="px-4 md:px-5 lg:pl-36">
+        <h1 class="text-rose-400 text-3xl pb-5 font-bold text-start">
+          Our Vision
+        </h1>
+        <p class="text-white">
+          At Pen Programmer, our vision is to be a leading global platform that
+          empowers individuals to harness the power of technology and become
+          creators of tomorrow. We envision a world where anyone, regardless of
+          their background, can access top-quality technical education and
+          resources, enabling them to shape innovative solutions and drive
+          positive change in the digital realm.
+        </p>
+
+        <h3 class="text-white text-2xl font-bold pt-4">
+          Igniting Minds, Building Futures - Choose Pen Programmer
+        </h3>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer class="mt-20">
+      <div
+        class="bg-gradient-to-b from-[#1b142c] to-[#1b142c] pt-12 lg:pt-4 text-center lg:text-start text-white lg:flex lg:items-center lg:justify-center lg:gap-8"
+      >
+        <div class="contactInfo">
+          <h1 class="text-3xl font-bold lg:text-xl">Contact Information</h1>
+          <p class="pt-6 lg:pt-3 text-lg lg:text-base">Office Address:</p>
+          <p class="pt-2 text-lg lg:text-base">Bechimari, Assam 784514</p>
+          <p class="pt-2 text-lg lg:text-base">
+            Email: support@penprogrammer.com
+          </p>
+          <p class="pt-2 text-lg lg:text-base">Phone: 8638500289</p>
+        </div>
+
+        <div class="contactInfo">
+          <h1 class="text-3xl font-bold lg:text-xl">Important Links</h1>
+          <p class="pt-6 lg:pt-3 text-lg lg:text-base">
+            <a
+              href="https://www.penprogrammer.com/terms-conditions"
+              target="_blank"
+              >Terms & Conditions</a
+            >
+          </p>
+          <p class="pt-2 text-lg lg:text-base">
+            <a
+              href="https://www.penprogrammer.com/privacy-policy"
+              target="_blank"
+              >Privacy Policy</a
+            >
+          </p>
+          <p class="pt-2 text-lg lg:text-base">
+            <a
+              href="https://www.penprogrammer.com/refund-policy"
+              target="_blank"
+              >Refund Policy</a
+            >
+          </p>
+          <p class="pt-2 text-lg lg:text-base">
+            <a href="https://www.penprogrammer.com/contact" target="_blank"
+              >Contact Us</a
+            >
+          </p>
+        </div>
+
+        <div class="contactInfo">
+          <h1 class="text-3xl font-bold lg:text-xl">Developer Tools</h1>
+          <p class="pt-6 lg:pt-3 text-lg font-semibold lg:text-base">
+            <a href="">StackOverFlow</a>
+          </p>
+          <p class="pt-2 text-lg lg:text-base">
+            <a href="">Github</a>
+          </p>
+          <p class="pt-2 text-lg lg:text-base">
+            <a href="">DNS Checker</a>
+          </p>
+          <p class="pt-2 text-lg lg:text-base">
+            <a href="">CheatSheet</a>
+          </p>
+        </div>
+
+        <!-- social icons -->
+
+        <div class="text-center">
+          <h1 class="text-3xl font-bold tracking-wide lg:text-xl">
+            Social Links
+          </h1>
+
+          <div class="flex justify-center gap-4 pt-6">
+            <!-- Facebook -->
+            <button
+              class="bg-[#575575] p-3 rounded-md border border-[#3a3860] hover:text-white hover:border-[#5b5a75] hover:scale-105 transition-all duration-300"
+            >
+              <i class="fa-brands fa-facebook-f text-lg"></i>
+            </button>
+
+            <button
+              class="bg-[#575575] p-3 rounded-md border border-[#2E2C45] hover:text-white hover:border-[#5b5a75] hover:scale-105 transition-all duration-300"
+            >
+              <i class="fa-brands fa-instagram text-lg"></i>
+            </button>
+
+            <button
+              class="bg-[#575575] p-3 rounded-md border border-[#3b3a50] hover:text-white hover:border-[#5b5a75] hover:scale-105 transition-all duration-300"
+            >
+              <i class="fa-brands fa-linkedin-in text-lg"></i>
+            </button>
+
+            <!-- GitHub -->
+            <button
+              class="bg-[#575575] p-3 rounded-md border border-[#3b3a50] hover:text-white hover:border-[#5b5a75] hover:scale-105 transition-all duration-300"
+            >
+              <i class="fa-brands fa-github text-lg"></i>
+            </button>
+
+            <!-- YouTube -->
+            <button
+              class="bg-[#575575] p-3 rounded-md border border-[#3b3a50] hover:text-white hover:border-[#5b5a75] hover:scale-105 transition-all duration-300"
+            >
+              <i class="fa-brands fa-youtube text-lg"></i>
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="certified text-white flex justify-center items-center text-center py-6"
+        >
+          <div>
+            <h1 class="text-lg font-medium mb-2 lg:text-xl">Certified By</h1>
+            <img
+              src="https://www.penprogrammer.com/_next/image?url=%2Flogo%2Fmsme.png&w=256&q=75"
+              alt="MSME Certification"
+              class="w-40 mx-auto mb-2 hover:opacity-100 transition-opacity duration-300 invert"
+            />
+            <p class="text-sm">Registered Under MSME Govt. India</p>
+            <p class="text-sm">
+              Certificate No:
+              <span class="text-gray-300">UDYAM-AS-07-0011375</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bg-gradient-to-b from-[#1b142c] to-[#1b142c] flex flex-col items-center justify-center py-12"
+      >
+        <img
+          src="https://www.penprogrammer.com/_next/image?url=%2Flogo%2Flogo-white.png&w=640&q=75"
+          alt=""
+          class="lg:h-10 h-11"
+        />
+
+        <h3 class="text-white">© 2023 All Rights Reserved | Pen Programmer</h3>
+      </div>
+    </footer>
+
+    <script>
+      const btn = document.getElementById("btn");
+
+      const questions = document.querySelectorAll(".que");
+
+      // mobile menu toggle
+
+      btn.addEventListener("click", () => {
+        mobile.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
